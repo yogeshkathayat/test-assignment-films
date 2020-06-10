@@ -3,7 +3,10 @@ export const errorMessage = {
     FAILED: "Failed",
     NOT_FOUND: "Page Not Found",
     INTERNAL_SERVER_ERROR: "Internal Server Error",
-    ALREADY_EXISTS: "Already exists" 
+    ALREADY_EXISTS: "Already exists",
+    PASSWORD_INCORRECT: "Your password is incorrect",
+    USER_NOT_EXISTS: "User does not exists",
+    USER_NOT_ACTIVE: "User is not active",
 
 };
 

@@ -10,6 +10,7 @@ import {
     basePath
 } from "./vars";
 import{ HandleError } from "../api/middlewares/error";
+import tokenGuard from "../util/tokenGuard";
 const handleError = new HandleError();
 
 /**
@@ -38,7 +39,7 @@ app.use(lusca.xssProtection(true));
 
 app.disable("x-powered-by");
 
-
+app.all(basePath + "/*", [tokenGuard.verifyToken]);
 // mount api routes
 app.use(basePath, routes);
 

@@ -23,6 +23,13 @@ export class HandleError {
      * @return {*}
      */
     public notFound(req: Request, res: Response, next: any) {
-        CustomResponse.setResponse(res, false, HttpStatus.NOT_FOUND, errorMessage.NOT_FOUND, version.v1, {});
+        CustomResponse.setResponse(
+            res,
+            false,
+            HttpStatus.NOT_FOUND,
+            errorMessage.NOT_FOUND,
+            version.v1,
+            {}
+        );
     }
 }

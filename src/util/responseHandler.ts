@@ -33,7 +33,7 @@ class ResponseHandler {
         this.result = result;
         this.platformStatus = platformStatus;
         this.res.status(this.status).send({
-            status: this.successStatus,
+            success: this.successStatus,
             code: this.status,
             message: this.message,
             appVersion: this.appVersion,

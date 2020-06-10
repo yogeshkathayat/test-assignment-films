@@ -13,7 +13,7 @@ mongoose.connect(mongodbConnectionURL, {
     useUnifiedTopology: true
 }).then(
     () => { /** ready to use. The `mongoose.connect()` promise resolves to undefined. */
-        logger.info(`mongodb connected`)
+        logger.info(`mongodb connected`);
     },
 ).catch(err => {
     logger.info(`MongoDB connection error. Please make sure MongoDB is running ${err}`);
