@@ -94,7 +94,7 @@ export class UserController {
     * @param {Request} req req object
     * @param {Response} res response object
     */
-    public login = async (req: Request, res: Response) => {
+    public login = async (req: Request, res: Response): Promise<any> => {
 
         const methodName = "[login]";
         try {
