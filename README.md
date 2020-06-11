@@ -1,4 +1,4 @@
-# test assignment films
+# Test Assignment - Films
 Films Test Assignment REST API using Node.js
 
 ## Requirements
@@ -62,6 +62,6 @@ http://localhost:3000/api/v1/docs/
 
 ![Swagger UI](https://github.com/yogeshkathayat/test-assignment-films/raw/master/swagger.png)
 
-## coverage report
+## Coverage Report
 
 ![Unit Test with coverage](https://github.com/yogeshkathayat/test-assignment-films/raw/master/coverage.png)
