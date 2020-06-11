@@ -1,0 +1,23 @@
+version: "3"
+networks:
+  default:
+services:
+  film-app:
+    networks:
+      - default
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      ENV_NAME: dev
+      PORT: 3000
+      MONGODB_URL: mongodb://film-mongodb:27017/Film
+    ports:
+      - 3000:3000
+    links:
+      - film-mongodb
+  film-mongodb:
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"

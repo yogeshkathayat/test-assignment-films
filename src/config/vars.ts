@@ -13,5 +13,8 @@ export const port = process.env.PORT;
 export const jwtSecret = process.env.JWT_SECRET;
 export const jwtExpireTime = process.env.JWT_EXPIRE_TIME;
 export const basePath = "/api/v1";
-export const mongodbConnectionURL = process.env.MONGODB_URL;
+export const mongodbConnectionURL = process.env.MONGODB_CONNECTION_URL;
+export const mongodbURL = process.env.MONGODB_URL;
+export const mongodbDatabase = process.env.MONGODB_DATABASE;
+
 export const logs = process.env.NODE_ENV === "production " ? "combined " : "dev";

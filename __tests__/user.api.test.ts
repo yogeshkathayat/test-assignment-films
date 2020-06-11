@@ -116,7 +116,7 @@ describe("POST /api/v1/users/signup", function () {
     });
 
     let data6= {
-        email: 'test@doe.com',
+        email: 'test2@doe.com',
         password:'1234'
     }
 

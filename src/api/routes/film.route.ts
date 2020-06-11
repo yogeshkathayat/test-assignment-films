@@ -168,7 +168,7 @@ router.post("/create", validateFilm, filmController.create);
 *                      schema:
 *                          $ref: '#/components/schemas/ErrorResponse'
 */
-router.post("/comment", validateFilm, filmController.addComment);
+router.post("/comment", filmController.addComment);
 
 
 export default router;

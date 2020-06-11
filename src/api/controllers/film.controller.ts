@@ -227,7 +227,7 @@ export class FilmController {
 
 
             // find if film already exists
-            const existingFilm = await this._filmRepository.filmExists(req.body.id);
+            const existingFilm = await this._filmRepository.findOne(req.body.id);
 
             if (existingFilm) {
 
