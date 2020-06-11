@@ -132,7 +132,7 @@ export class UserController {
                         return ResponseHandler.setResponse(
                             res,
                             true,
-                            HttpStatus.OK,
+                            HttpStatus.UNAUTHORIZED,
                             errorMessage.USER_NOT_ACTIVE,
                             version.v1,
                             {}
@@ -157,7 +157,7 @@ export class UserController {
                 return ResponseHandler.setResponse(
                     res,
                     true,
-                    HttpStatus.OK,
+                    HttpStatus.UNAUTHORIZED,
                     errorMessage.USER_NOT_EXISTS,
                     version.v1,
                     {}

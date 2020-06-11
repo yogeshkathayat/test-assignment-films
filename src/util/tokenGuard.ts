@@ -6,23 +6,22 @@ import {
 
 const loggerName = "[TokenGuard]: ";
 
-const allowedList = [
-    "/api/v1/users/login",
-    "/api/v1/users/signup",
-    "/api/v1/health",
-    "/api/v1/docs",
-    "/api/v1/films",
+const protectedRoutes = [
+    "/api/v1/films/create",
+    "/api/v1/films/comment",
 ];
 
 class TokenVerify {
     constructor() { }
 
     public urlChecker = (url: string) => {
-        for (const allowedUrl of allowedList) {
-            if (url.indexOf(allowedUrl) > -1) {
-                return true;
+        for (const route of protectedRoutes) {
+            if(url.includes(route)){
+                return false;
             }
+
         }
+        return true;
     }
 
     public verifyToken = (req: any, res: Response, next: any) => {

@@ -6,7 +6,7 @@ export const UserValidationSchema = Joi.object().keys({
     _id: Joi.string(),
     userName: Joi.string(),
     role:  Joi.string(),
-    email:  Joi.string().required(),
+    email:  Joi.string().email().required(),
     password:  Joi.string().required(),
     active:  Joi.string(),
     gender:  Joi.string()

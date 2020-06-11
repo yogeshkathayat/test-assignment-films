@@ -19,7 +19,7 @@ const fileName = "[film.controller.js]";
 /**
  * FilmController class
  * contains methods related to
- * User
+ * Film
  * @class
  */
 export class FilmController {
