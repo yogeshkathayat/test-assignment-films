@@ -8,7 +8,7 @@ Films Test Assignment REST API using Node.js
 - Typescript
 - Express
 - Mongoose
-- Jest with Supertest for unit testing and coverage
+- Jest with Supertest for testing and coverage
 
 ## RUNNING APP WITH DOCKER
 Docker & docker-compose must be installed
