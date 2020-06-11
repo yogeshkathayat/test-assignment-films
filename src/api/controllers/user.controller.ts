@@ -98,6 +98,7 @@ export class UserController {
 
         const methodName = "[login]";
         try {
+            console.log("req.body",req.body)
             const data = req.body;
 
             const existingUser = await this._userRepository.findUserByEmail(data.email);

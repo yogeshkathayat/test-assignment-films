@@ -2,6 +2,7 @@
 import express from "express";
 import morgan from "morgan";
 import bodyParser from "body-parser";
+import cors from "cors";
 import lusca from "lusca";
 import routes from "../api/routes/index";
 import {
@@ -22,6 +23,8 @@ app.set("port", port || 3000);
 
 // request logging. dev: console | production: file
 app.use(morgan(logs));
+// enable CORS - Cross Origin Resource Sharing
+app.use(cors());
 
 
 // parse body params and attache them to req.body

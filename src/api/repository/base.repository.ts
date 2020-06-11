@@ -38,7 +38,7 @@ export abstract class BaseRepository<T> implements IWrite<T>, IRead<T> {
         );
     }
 
-    async find(item: T): Promise<T[]> {
+    async find(item?: T): Promise<T[]> {
         return await this._model.find({}).lean();
     }
 

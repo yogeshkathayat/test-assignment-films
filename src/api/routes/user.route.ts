@@ -9,7 +9,7 @@ const userController = new UserController();
 
 /**
 *  @swagger
-*  /api/v1/user/signup:
+*  /api/v1/users/signup:
 *  post:
 *      tags:
 *          - User
@@ -35,7 +35,7 @@ router.post("/signup", validateUser, userController.signup);
 
 /**
 *  @swagger
-*  /api/v1/user/login:
+*  /api/v1/users/login:
 *  post:
 *      tags:
 *          - User

@@ -4,11 +4,11 @@ import * as Joi from "@hapi/joi";
 
 export const GenreValidationSchema = Joi.object().keys({
     _id: Joi.string(),
-    genre: Joi.string()
+    name: Joi.string()
 });
 
 const genreSchema = new Schema({
-    genre: {
+    name: {
         type: String
     },
 

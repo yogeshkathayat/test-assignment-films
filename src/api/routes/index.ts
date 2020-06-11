@@ -2,6 +2,8 @@ import express from "express";
 import swaggerUi from "swagger-ui-express";
 import { specs } from "../../config/swagger";
 import userRoute from "./user.route";
+import filmRoute from "./film.route";
+
 
 
 const router = express.Router();
@@ -16,7 +18,10 @@ router.get("/health", (req, res) => res.status(200).send("OK"));
  */
 router.use("/docs", swaggerUi.serve, swaggerUi.setup(specs));
 
-router.use("/user", userRoute);
+router.use("/users", userRoute);
+
+router.use("/films", filmRoute);
+
 
 
 

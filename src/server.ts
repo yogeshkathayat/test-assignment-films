@@ -1,6 +1,7 @@
 
 import app from "./config/app";
 import("./config/mongoose");
+import {seed} from "./seeder"
 
 
 /**
@@ -11,6 +12,7 @@ const server = app.listen(app.get("port"), async () => {
     app.get("port"),
     app.get("env")
   );
+  await seed();
   console.log(`Press CTRL-C to stop\n`);
 });
 

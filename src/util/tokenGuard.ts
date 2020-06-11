@@ -7,10 +7,11 @@ import {
 const loggerName = "[TokenGuard]: ";
 
 const allowedList = [
-    "/api/v1/user/login",
-    "/api/v1/user/signup",
+    "/api/v1/users/login",
+    "/api/v1/users/signup",
     "/api/v1/health",
     "/api/v1/docs",
+    "/api/v1/films",
 ];
 
 class TokenVerify {
